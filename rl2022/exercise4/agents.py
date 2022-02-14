@@ -25,16 +25,16 @@ class DiagGaussian(torch.nn.Module):
 
 
 class DDPG(Agent):
-    """ DDPG
+    """DDPG agent
 
-        **YOU NEED TO IMPLEMENT FUNCTIONS IN THIS CLASS**
+    **YOU NEED TO IMPLEMENT FUNCTIONS IN THIS CLASS**
 
-        :attr critic (FCNetwork): fully connected critic network
-        :attr critic_optim (torch.optim): PyTorch optimiser for critic network
-        :attr policy (FCNetwork): fully connected actor network for policy
-        :attr policy_optim (torch.optim): PyTorch optimiser for actor network
-        :attr gamma (float): discount rate gamma
-        """
+    :attr critic (FCNetwork): fully connected critic network
+    :attr critic_optim (torch.optim): PyTorch optimiser for critic network
+    :attr policy (FCNetwork): fully connected actor network for policy
+    :attr policy_optim (torch.optim): PyTorch optimiser for actor network
+    :attr gamma (float): discount rate gamma
+    """
 
     def __init__(
             self,

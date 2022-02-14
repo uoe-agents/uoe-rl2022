@@ -143,7 +143,10 @@ class IndependentQLearningAgents(MultiAgent):
 
 
 class JointActionLearning(MultiAgent):
-    """Agents using the Joint Action Learning algorithm with Opponent Modelling
+    """
+    Agents using the Joint Action Learning algorithm with Opponent Modelling
+
+    **YOU NEED TO IMPLEMENT FUNCTIONS IN THIS CLASS**
     """
 
     def __init__(self, learning_rate: float =0.5, epsilon: float =1.0, **kwargs):

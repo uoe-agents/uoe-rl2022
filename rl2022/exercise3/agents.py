@@ -84,7 +84,7 @@ class Agent(ABC):
 
 
 class DQN(Agent):
-    """The DQN agent for exercise 3
+    """DQN agent
 
     **YOU NEED TO IMPLEMENT FUNCTIONS IN THIS CLASS**
 
@@ -209,7 +209,7 @@ class DQN(Agent):
 
 
 class Reinforce(Agent):
-    """ The Reinforce Agent for Ex 3
+    """Reinforce agent
 
     **YOU NEED TO IMPLEMENT FUNCTIONS IN THIS CLASS**
 

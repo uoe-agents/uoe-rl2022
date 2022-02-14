@@ -1,17 +1,10 @@
 from abc import ABC, abstractmethod
 from collections import defaultdict
 import random
-import sys
 from typing import List, Dict, DefaultDict
 
-import numpy as np
-from gym.spaces import Space, Box
+from gym.spaces import Space
 from gym.spaces.utils import flatdim
-
-from rl2022.exercise5.matrix_game import actions_to_onehot
-
-def obs_to_tuple(obs):
-    return tuple([tuple(o) for o in obs])
 
 
 class MultiAgent(ABC):

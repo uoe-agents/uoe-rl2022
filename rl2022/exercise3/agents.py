@@ -10,7 +10,7 @@ from torch.optim import Adam
 from typing import Dict, Iterable, List
 
 from rl2022.exercise3.networks import FCNetwork
-from rl2022.exercise3.replay import Transition, ReplayBuffer
+from rl2022.exercise3.replay import Transition
 
 
 class Agent(ABC):

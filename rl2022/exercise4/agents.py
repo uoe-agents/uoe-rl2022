@@ -9,19 +9,8 @@ from torch.autograd import Variable
 from torch.distributions import Normal
 
 from rl2022.exercise3.agents import Agent
-# from networks import Actor, Critic
 from rl2022.exercise3.networks import FCNetwork
-from rl2022.exercise3.replay import Transition, ReplayBuffer
-
-
-class DiagGaussian(torch.nn.Module):
-    def __init__(self, mean, std):
-        self.mean = mean
-        self.std = std
-
-    def sample(self):
-        eps = Variable(torch.randn(*self.mean.size()))
-        return self.mean + self.std * eps
+from rl2022.exercise3.replay import Transition
 
 
 class DDPG(Agent):

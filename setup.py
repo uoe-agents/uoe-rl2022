@@ -9,7 +9,8 @@ setup(
     packages=find_packages(exclude=["contrib", "docs", "tests"]),
     install_requires=[
         "numpy>=1.18",
-        "torch>=1.3" "gym>=0.12",
+        "torch>=1.3",
+        "gym>=0.12",
         "gym[box2d]",
         "tqdm>=4.41",
         "pyglet>=1.3",
